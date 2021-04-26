@@ -1,0 +1,23 @@
+# Copyright 2021 Changkun Ou. All rights reserved.
+# Use of this source code is governed by a MIT
+# license that can be found in the LICENSE file.
+
+---
+smtp_host: smtpin1.ifi.lmu.de
+smtp_port: "587"
+avatar: Changkun Ou
+email_addr: changkun.ou
+username: xxx # email account username
+password: xxx # email account password
+receivers:    # all receivers
+  - changkun.ou
+send_time: "2006-01-02T07:30:00+02:00" # only change hour, minutes, or timezone
+hours: 24                              # how many hours per email?
+title: Need to come to the office/lab (%d.%d.%d)  # email title
+content: |                                        # email content
+  Dear XYZ,
+  
+  This is an email send at date %d.%d.%d.
+  
+  Sincerely,
+  Changkun Ou
